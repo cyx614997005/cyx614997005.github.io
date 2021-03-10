@@ -2,11 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyx614997005.github.io</id>
     <title>云间浅谈</title>
-    <updated>2021-03-10T05:07:05.712Z</updated>
+    <updated>2021-03-10T05:10:07.412Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyx614997005.github.io"/>
     <link rel="self" href="https://cyx614997005.github.io/atom.xml"/>
-    <subtitle>&lt;script src=&quot;https://api.qqder.com/share/api.php&quot;&gt;&lt;/script&gt;</subtitle>
     <logo>https://cyx614997005.github.io/images/avatar.png</logo>
     <icon>https://cyx614997005.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 云间浅谈</rights>
