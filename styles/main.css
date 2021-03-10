@@ -1019,4 +1019,28 @@ td {
 .github-badge .bg-blue {background-color: #3282b8}
 .github-badge .bg-purple {background-color: #3F51B5}
 .github-badge .bg-green {background-color: #3bca6e}
+/*panel阴影*/
+		.panel {
+			box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+			-moz-box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+		}
+
+		.panel:hover {
+			box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+			-moz-box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+		}
+
+		.panel-small {
+			box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+			-moz-box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+		}
+
+		.panel-small:hover {
+			box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+			-moz-box-shadow: 1px 1px 5px 5px rgba(255, 112, 173, 0.35);
+		}
+
+		#如果也想使盒子四周也有阴影，加上以下代码 .app.container {
+			box-shadow: 0 0 30px rgba(255, 112, 173, 0.35);
+		}
     
