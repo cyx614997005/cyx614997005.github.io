@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyx614997005.github.io</id>
     <title>云间浅谈</title>
-    <updated>2021-03-10T05:52:35.875Z</updated>
+    <updated>2021-03-10T05:56:02.787Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyx614997005.github.io"/>
     <link rel="self" href="https://cyx614997005.github.io/atom.xml"/>
@@ -23,9 +23,9 @@
 <p>废话不多说，下面开始教程:</p>
 <h2 id="购买服务器">购买服务器</h2>
 <p>1.这里以腾讯云为例，腾讯云目前25岁以下身份认证自动获得学生身份，可以购买学生机，每个月9块钱。<br>
-{x}  链接地址:[腾讯云9元/月学生机][1]<br>
+🔗链接地址:https://cloud.tencent.com/act/cps/redirect?redirect=10004&amp;cps_key=f500a37835712ce03fd6b82b0e911dfd<br>
 如果不是学生身份，可以买腾讯云轻量服务器，最低套餐128块钱一年。<br>
-{x}  链接地址:[腾讯云轻量服务器][2]<br>
+🔗链接地址:https://cloud.tencent.com/act/pro/lighthouse?fromSource=gwzcw.3958405.3958405.3958405&amp;utm_medium=cps&amp;utm_id=gwzcw.3958405.3958405.3958405&amp;cps_key=f500a37835712ce03fd6b82b0e911dfd<br>
 <code>小提示</code> :最近腾讯云轻量可以432元购买4年高配服务器（血赚），具体购买教程看我另一期文章。<br>
 2.购买时注意系统镜像选择，点击 <code>市场服务</code> ☞  <code>运维工具</code> ，找到宝塔Linux面板6.X（腾讯云定制版），点击 <code>免费使用</code> 。![][3]</p>
 <h2 id="登入宝塔面板">登入宝塔面板</h2>
