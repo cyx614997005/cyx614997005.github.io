@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyx614997005.github.io</id>
     <title>云间浅谈</title>
-    <updated>2021-03-10T05:56:02.787Z</updated>
+    <updated>2021-03-10T05:58:34.893Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyx614997005.github.io"/>
     <link rel="self" href="https://cyx614997005.github.io/atom.xml"/>
@@ -10,65 +10,6 @@
     <logo>https://cyx614997005.github.io/images/avatar.png</logo>
     <icon>https://cyx614997005.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 云间浅谈</rights>
-    <entry>
-        <title type="html"><![CDATA[Typecho博客搭建教程]]></title>
-        <id>https://cyx614997005.github.io/post/xiao-si-wo-liao/</id>
-        <link href="https://cyx614997005.github.io/post/xiao-si-wo-liao/">
-        </link>
-        <updated>2021-03-10T05:47:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>📜对于博客，之前自己也是用过 <code>WordPress</code> 、<code>Emlog</code> 、 <code>Z-blog</code> ， <code>Typecho</code> 但相对于这个后起之秀，前三个效果都不太行。 <code>Typecho</code> 相对于轻量化，支持的主题及插件也比较丰富。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>📜对于博客，之前自己也是用过 <code>WordPress</code> 、<code>Emlog</code> 、 <code>Z-blog</code> ， <code>Typecho</code> 但相对于这个后起之秀，前三个效果都不太行。 <code>Typecho</code> 相对于轻量化，支持的主题及插件也比较丰富。</p>
-<!-- more -->
-<p>废话不多说，下面开始教程:</p>
-<h2 id="购买服务器">购买服务器</h2>
-<p>1.这里以腾讯云为例，腾讯云目前25岁以下身份认证自动获得学生身份，可以购买学生机，每个月9块钱。<br>
-🔗链接地址:https://cloud.tencent.com/act/cps/redirect?redirect=10004&amp;cps_key=f500a37835712ce03fd6b82b0e911dfd<br>
-如果不是学生身份，可以买腾讯云轻量服务器，最低套餐128块钱一年。<br>
-🔗链接地址:https://cloud.tencent.com/act/pro/lighthouse?fromSource=gwzcw.3958405.3958405.3958405&amp;utm_medium=cps&amp;utm_id=gwzcw.3958405.3958405.3958405&amp;cps_key=f500a37835712ce03fd6b82b0e911dfd<br>
-<code>小提示</code> :最近腾讯云轻量可以432元购买4年高配服务器（血赚），具体购买教程看我另一期文章。<br>
-2.购买时注意系统镜像选择，点击 <code>市场服务</code> ☞  <code>运维工具</code> ，找到宝塔Linux面板6.X（腾讯云定制版），点击 <code>免费使用</code> 。![][3]</p>
-<h2 id="登入宝塔面板">登入宝塔面板</h2>
-<p>1.买完服务器稍等几分钟，等待服务器初始化完成后在浏览器打开输入：&quot;服务器IP:8888&quot;，设置用户名和密码，<code>注：服务器IP填写公网IP</code> 。![ ][4]<br>
-2.登入面板，面板会自动推荐你安装环境套件，这里有两种选择，第一种是LNMP套件，第二种是LAMP套件(如图)：![][5]<br>
-3.在这里要提醒大家： <code>LNMP</code> 和 <code>LAMP</code> 环境主要的区别在于web服务器上面，一个使用是 <code>Apache</code> 服务器，另一个使用 <code>Nginx</code> 服务器。如果你不了解两种的区别和差异请使用推荐安装(LNMP套件)。<br>
-4.安装方式这里根据自身实际的情况选择，如果当前环境为生产环境，请使用(编译安装)，确保后期程序运行的稳定性，(极速安装)主要用于<code>体验和测试</code> 使用，正式情况下请避免使用(极速安装)。<br>
-##购买域名##<br>
-1.我们在腾讯云购买了服务器就在腾讯云购买域名（后期好备案），具体请参考[域名注册][6]。<br>
-2.将域名解析到宝塔面板，具体请参考[Dposd快速添加域名解析][7]。<br>
-##添加网站##<br>
-1.安装完成后就可以点击左侧栏网址，然后添加站点（如图）:![ ][8]<br>
-2.填写之前在腾讯云购买的域名；数据库选择创建，建议选择MySQL，然后就会得到数据库的用户名和密码（记住，待会要用）；其他选项保持默认即可，然后点击『提交』按钮，具体如下图所示：![ ][9]<br>
-##手动部署Typecho##<br>
-1.下载Typecho<br>
-去[Typecho官网][10]下载最新(1.1)程序。<br>
-![ ][11]<br>
-2.将Typecho程序放入网站目录<br>
-去到上一步添加网站建立的网站根目录：![ ][12]<br>
-删除里面的几个文件，将下载好的Typecho程序上传至该目录解压:![ ][13]这样就可以了。<br>
-##安装Typecho##<br>
-1.确认你的域名解析已经设置好了，然后用浏览器访问你的域名。![ ][14]2.看到这一步就代表之前的配置没问题，点击我准备好了, 开始下一步。<br>
-3.安装的时候主要就是配置数据库，填入你刚刚建立网站的时候的数据库配置。![ ][15]<br>
-4.配置好数据库后，创建你的管理员账户之后就可以开始安装了。<br>
-安装很快就会完成。</p>
-<p>##本期教程到此结束，谢谢阅读！##<br>
-[1]: https://cloud.tencent.com/act/cps/redirect?redirect=10004&amp;cps_key=f500a37835712ce03fd6b82b0e911dfd<br>
-[2]: https://cloud.tencent.com/act/pro/lighthouse?fromSource=gwzcw.3958405.3958405.3958405&amp;utm_medium=cps&amp;utm_id=gwzcw.3958405.3958405.3958405&amp;cps_key=f500a37835712ce03fd6b82b0e911dfd<br>
-[3]: https://i.loli.net/2021/02/28/S9w7UOpVD5bBITf.jpg<br>
-[4]: https://i.loli.net/2021/02/28/2NrO9ZH57LDs1GU.jpg<br>
-[5]: https://i.loli.net/2021/02/28/ZJ6lPNMjheUWwXC.jpg<br>
-[6]: https://cloud.tencent.com/document/product/242/9595<br>
-[7]: https://cloud.tencent.com/document/product/302/3446?from=information.detail.%E8%85%BE%E8%AE%AF%E4%BA%91%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%AD%A5%E9%AA%A4<br>
-[8]: https://i.loli.net/2021/02/28/F6MYLlxjtyH5fTk.png<br>
-[9]: https://i.loli.net/2021/02/28/JNm7WApeOyK42FX.png<br>
-[10]: http://typecho.org/<br>
-[11]: https://i.loli.net/2021/03/01/8zVFQXyItBqgSwN.jpg<br>
-[12]: https://i.loli.net/2021/03/01/ad26qPMEzebCNgD.jpg<br>
-[13]: https://i.loli.net/2021/03/01/EmNbAP39D2ZUcK1.jpg<br>
-[14]: https://i.loli.net/2021/03/01/JhaK2Gnwl8AP1Lb.jpg<br>
-[15]: https://i.loli.net/2021/03/01/3CUX9yhwnFrKlHB.jpg</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://cyx614997005.github.io/post/hello-gridea/</id>
